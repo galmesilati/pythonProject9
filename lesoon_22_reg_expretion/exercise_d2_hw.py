@@ -1,8 +1,5 @@
 import datetime
-
-
 class DatesOfTheMonth:
-
     def __init__(self, start=datetime.date.today()):
         self.start_from = start
         if type(self.start_from) != datetime.date:
@@ -10,7 +7,6 @@ class DatesOfTheMonth:
 
     def get_start(self):
         return self.start_from
-
     def __iter__(self):
         self.counter = self.start_from
         return self
@@ -21,6 +17,7 @@ class DatesOfTheMonth:
         curr = self.counter
         self.counter += datetime.timedelta(days=1)
         return curr
+
 
 
 class DateTimeError(Exception):

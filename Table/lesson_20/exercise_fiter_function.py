@@ -18,12 +18,12 @@ from _datetime import datetime
 # if __name__ == '__main__':
 #     print(map_day(['12-12-2021', '18-12-2021', '19-12-2021']))
 
-names = ["gal", "chen", "valerya", "nadav"]
+# names = ["gal", "chen", "valerya", "nadav"]
 
-def sorted_names(text: list):
-    return sorted(text, key=len)
-
-print(sorted_names(names))
+# def sorted_names(text: list):
+#     return sorted(text, key=len)
+#
+# print(sorted_names(names))
 
 
 

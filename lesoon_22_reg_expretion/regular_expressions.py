@@ -43,7 +43,7 @@ if __name__ == '__main__':
     # מופע של אפס או אחד פעמים
     print(re.search("(ca*t)", "ct"))
     print(re.search ("(ca)*t", "ct")) #ימצא רק את ה(t)
-    # מה שלפני הפלוס יכול להופיע אפס או אחד פעמים?
+    # מה שלפני הסימן שאלה יכול להופיע אפס או אחד פעמים?
     print(re.search("ca?t", "cat"))
     print(re.search("ca?t", "ctsssjsj98778sh"))
     print(re.search("(dog|cat)( dog| cat)*", "dog cat dog cat cat dog"))
@@ -53,7 +53,7 @@ if __name__ == '__main__':
     print(re.search(".*[0-9]$", "dgffdhfhf8a"))
     # סימון של מה שאני רוצה שיתחיל הסטרינג^
     print(re.search("^[0-9].*", "7ssfjnjfbv"))#  שזה יתחיל בספרה כי הכובע מחוץ לסוגריים המרובעות
-    print(re.search("^[0-9].*", "a7ssfjnjfbv"))
+    print(re.search("^[03-9].*", "a7ssfjnjfbv"))
     print(re.search("[^0-9]", "%")) # מה שכתוב בתוך סוגריים מרובעות יהיה הכל חוץ מזה בזכות הכובע בתוך הסוגריים
 
 
